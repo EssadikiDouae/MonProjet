@@ -8,7 +8,7 @@ public class AdditionServlet extends HttpServlet {
 
     private static final long serialVersionUID = 1L;
 
-    // Méthode GET → afficher formulaire
+    
     
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -31,7 +31,7 @@ public class AdditionServlet extends HttpServlet {
         out.println("</body></html>");
     }
 
-    // Méthode POST → calculer addition + réafficher formulaire
+    
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
