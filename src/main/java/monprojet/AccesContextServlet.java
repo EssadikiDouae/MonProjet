@@ -15,14 +15,12 @@ public class AccesContextServlet   extends HttpServlet {
         res.setContentType("text/html");
         PrintWriter out = res.getWriter();
 
-        // Récupération du contexte
         ServletContext context = getServletContext();
 
-        // Récupération des paramètres d'initialisation
+        
         String webmaster = context.getInitParameter("webmaster");
         String email = context.getInitParameter("email");
 
-        // Affichage
         out.println("<html><head><title>Infos du Contexte</title></head><body>");
         out.println("<h1>Paramètres du contexte :</h1>");
         out.println("<ul>");
